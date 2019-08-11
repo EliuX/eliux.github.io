@@ -8,6 +8,10 @@ tags:
   - Java8
   - data
   - IO
+  - Streams
+  - search
+  - filter
+  - Reactive
  
 categories: Java tricks
 excerpt: "How would you deal with infinite of very large data in Java 8+ without breaking the CPU? Let's see the way I would do it."
@@ -22,7 +26,7 @@ comments: true
 
 Firstly, it intrigued me the fact that I had to have in count 2 Gbs of RAM, but probably that was just to bear in mind the size of Integer as a data structure and how many of them could I create before depleting the memory (Memory Overflow). To calculate the maximum amount of Integers we should be able to create I used the following constant:
 
-```
+```java
 private static final int MAX_CAPACITY = BigInteger.valueOf(2)
             .multiply(BigInteger.valueOf(1073741824))
             .divide(BigInteger.valueOf(Integer.BYTES))
@@ -36,7 +40,7 @@ private static final int MAX_CAPACITY = BigInteger.valueOf(2)
 
 In order to find the missing `Integer` values that are not in the input list I had to implement a function called `findMissingIntegers` so I can print them later
 
-```
+```java
 final List<Integer> result = findMissingIntegers(Arrays.asList(
         2, 4, 6, 1, 14
 ));
