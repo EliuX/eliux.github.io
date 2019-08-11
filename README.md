@@ -47,6 +47,3 @@ please excecute:
 ```
 bundle exec jekyll serve
 ```
-
-
-
