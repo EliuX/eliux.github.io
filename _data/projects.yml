@@ -1,10 +1,3 @@
-- name: Flask - OPA (Open Policy Agent)
-  programmingLanguages : ['Python', 'OPA']
-  description: >-
-    My first OSS project in Python. Its a Flask extension to enforce policies 
-    using OPA. It allows authorization on HTTP API requests and 
-    Policy Enforcement Points.
-  github-id: flask-opa
 - name: Mega for Java (MEGAcmd4J)
   programmingLanguages : ['Java', 'Mega']
   description: >-  
@@ -13,6 +6,28 @@
     basically a wrapper. Its very useful for those who wants to use this nice 
     cloud storage service with 100 Gb of free space.
   github-id: MEGAcmd4J
+- name: Serverless plugin for migrate
+  programmingLanguages: ['Javascript']
+  description: >-
+    This is a Serverless plugin that allows you to run database-agnostic migrations.
+    My first OSS project in Javascript.
+  github-id: serverless-migrate-plugin
+- name: Flask - OPA (Open Policy Agent)
+  programmingLanguages : ['Python', 'OPA']
+  description: >-
+    My first OSS project in Python. Its a Flask extension to enforce policies 
+    using OPA. It allows authorization on HTTP API requests and 
+    Policy Enforcement Points.
+  github-id: flask-opa
+- name: Catch the Pig
+  programmingLanguages : ['Java', 'Android']
+  description: >-  
+    In 2013, I started learning about how to develop Android applications. 
+    In order to test my skills, I decided to do this simple Android 
+    game including an AI using binary trees. It uses no extra library, just the Android SDK.
+  github-id: CatchThePig
+  targetProduct: catchthepig.apk
+  #runtimePlatform: Java v1, Python2.3, .Net Framework 3.0
 - name: Code snippets for the Twilio API documentation
   programmingLanguages : ['Ruby', 'Javascript']
   description: >-
@@ -52,16 +67,6 @@
     This is basically a call center created with the Task Router API of Twilio. 
     This example uses a SQLite database to log phone calls which were not assisted.
   url: https://github.com/TwilioDevEd/task-router-laravel/
-- name: Catch the Pig
-  programmingLanguages : ['Java', 'Android']
-  description: >-  
-    In 2013 I started learning how to develop Android applications. 
-    Then for testing my skills i decided to do this simple Android 
-    game, using none third party libraries, just what came with the 
-    Android SDK at the moment.
-  github-id: CatchThePig
-  targetProduct: catchthepig.apk
-  #runtimePlatform: Java v1, Python2.3, .Net Framework 3.0
 - name: CIS 194 Homeworks
   programmingLanguages: ['Haskell']
   description: >-
@@ -87,5 +92,4 @@
     Project created for the WalletHub team to get a better idea of my 
     technical and problem-solving skills.
   github-id: wallethub-parser
-
 

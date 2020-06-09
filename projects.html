@@ -4,6 +4,34 @@ author_profile: true
 title: My Sample Projects
 ---
 <h2 class="archive__subtitle">
+  Running projects I have done for hobby
+</h2>
+<section class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/SoftwareApplication">
+     <meta itemprop="author" content="{{ site.author.name }}" />
+     <meta itemprop="applicationCategory" content="Mobile App" />
+     
+     <h2 class="archive__item-title" itemprop="headline">
+      <a href="http://uni-to.appspot.com">Unito</a>
+     </h2> 
+     <div class="archive__item-excerpt" itemprop="description">
+       <p>
+          Unito is an application meant to allow the majority of cubans to keep popular trading lists, offline, in an Android app. 
+          Such lists are the cuban equivalent of Craiglist.
+          It was created by me back in 2016, when cubans only had Internet access through public WIFI areas. 
+          Years later, most of cubans only have Internet access using mobile data plans which are still very expensive,
+          so this service can give a real piece of mind.
+          This also works as a playground for me to try out how to make the most of the free layer of Cloud services
+          and test interesting technologies, like <a href="https://www.codenameone.com ">CodeName One</a>.
+       </p>
+
+      Note: I discountinued this project 3 months later I started it, because I found out that because of the embargo connections 
+      from Cuba to the <i>appspot.com</i> domain are forbidden. Therefore, its update packages can only be updated from Cuba through a VPN.
+     </div>
+  </article>
+</section>
+
+<h2 class="archive__subtitle">
   {{ site.data.ui-text[site.locale].github_repositories | default: "Github repositories" }}
 </h2>
 <p>
@@ -43,8 +71,7 @@ title: My Sample Projects
       </id>
   </article>
 {% endfor %}
-<p class="notice--info"><strong>And more...</strong> 
-  Unfortunately there are some projects which I cannot share because it belongs to 
-  previous costumers or because they are just private like this <a href="http://uni-to.appspot.com">Unito</a>.
+<p class="notice--info"><a href="https://github.com/EliuX?tab=repositories">And more...</a> 
+  There are some projects which I cannot share because of their privacy rights.
 </p> 
 </section>
