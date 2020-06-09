@@ -48,7 +48,7 @@ title: My Sample Projects
           {% if project.url %}
           <a href="{{project.url}}">{{ project.name }}</a>
           {% else %}
-          <a href="https://{{ site.www }}/{{project.github-id }}">{{ project.name }}</a> 
+          <a href="https://github.com/{{site.author.github}}/{{project.github-id }}">{{ project.name }}</a> 
           {% endif %}
         </h2>
       <div class="archive__item-excerpt" itemprop="description">{{ project.description }}</div>
@@ -56,7 +56,7 @@ title: My Sample Projects
         {% if project.url %}
         <a href="{{project.url}}" class="archive__item-show-details" itemprop="codeRepository">Source code</a>
         {% else %}
-        <a href="{{site.author.github}}/{{project.github-id}}" class="archive__item-show-details" itemprop="codeRepository">Source code</a>
+        <a href="https://github.com/{{site.author.github}}/{{project.github-id}}" class="archive__item-show-details" itemprop="codeRepository">Source code</a>
         {% endif %}
         {% if project.programmingLanguages %}
         <ul class="plangs" itemprop="targetProduct">
