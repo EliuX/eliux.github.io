@@ -105,7 +105,7 @@ author:
   name             : "Eliecer Hernández"
   avatar           : "/assets/images/eliux.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Out of the box thinker with software development skills"
-  location         : "Quito, Ecuador"
+  location         : "Québec, Canada"
   email            : eliecer@gmail.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"

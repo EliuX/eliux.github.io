@@ -11,7 +11,6 @@ categories: javascript common-errors
 excerpt: "Understanding why in Javascript methods lose their reference to `this` when they are used as high order functions"
 comments: true
 ---
-
 When a function has been used as a high order function (passed as an argument) they lose their awareness of `this`. In such cases, a common way to solve this problem is by passing such function bound to `this`. E.g.
 
 ```javascript
@@ -101,7 +100,7 @@ It even gets more interesting when you learn that when using arrow functions you
 
 ## See more
 
-- [Gentle explanation of `this` in Javascript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
-- [The Mozilla official documentation about the operator `this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+*[Gentle explanation of this in Javascript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+*[The Mozilla official documentation about the operator this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 [strict-mode]: https://www.w3schools.com/js/js_strict.asp
