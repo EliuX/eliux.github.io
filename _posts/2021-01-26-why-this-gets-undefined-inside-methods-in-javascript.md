@@ -1,14 +1,14 @@
 ---
 layout: single
 classes: wide
-title:  "Why this gets undefined in high order functions in Javascript"
+title:  "Why `this` gets undefined in high order functions in Javascript"
 date:   2021-01-26 23:15 -0500
 tags:
   - Javascript
   - programming
   - common-errors
 categories: javascript common-errors
-excerpt: "Understanding why in Javascript methods lose their reference to `this` when they are used as high order functions"
+excerpt: "Understanding why sometimes in Javascript a method loses its reference to `this` when it is used as a high order function"
 comments: true
 ---
 When a function has been used as a high order function (passed as an argument) they lose their awareness of `this`. In such cases, a common way to solve this problem is by passing such function bound to `this`. E.g.
