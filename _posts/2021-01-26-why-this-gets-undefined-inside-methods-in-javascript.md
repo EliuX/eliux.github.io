@@ -11,7 +11,6 @@ categories: javascript common-errors
 excerpt: "Understanding why in Javascript methods lose their reference to `this` when they are used as high order functions"
 comments: true
 ---
-
 When a function has been used as a high order function (passed as an argument) they lose their awareness of `this`. In such cases, a common way to solve this problem is by passing such function bound to `this`. E.g.
 
 ```javascript
@@ -89,19 +88,18 @@ captainStatus();
 
 ## Conclusions
 
-It is important to understand that:
+Each time we are going to execute functions in Javascript, it is important to remember that:
 
-- A method can be extracted from an object into a separated variable, e.g. `const oprhan = obj.someMethod`, in which case the separated variable
-is detached from the original object.
-- How we invoke a function changes the context on which it is executed
-- The keyword `this` is the global object in a function invocation.
-- The keyword `this` is undefined in a function invocation in strict mode
+- A method can be detached from an object into a separated variable, e.g. `const oprhan = obj.someMethod`.
+- How we invoke a function changes the context on which it is executed.
+- During the invokation of a function that is not attached to an object, i.e. function invokation, `this` is going to be searched in the global context.
+- The keyword `this` is undefined in a function invocation in strict mode.
 
-It even gets more interesting when you learn that when using arrow functions you get a static context on different invokation types.
+It gets more interesting when you learn that when using arrow functions you get a static context on different invokation types.
 
 ## See more
 
-- [Gentle explanation of `this` in Javascript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
-- [The Mozilla official documentation about the operator `this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [Gentle explanation of 'this' in Javascript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+- [The Mozilla official documentation about the operator 'this'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 [strict-mode]: https://www.w3schools.com/js/js_strict.asp

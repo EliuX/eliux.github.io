@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                    : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes"
+# theme                    : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.19.0"
 minimal_mistakes_skin    : "eliux-overflow" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 www                      : "eliux.github.io"
 
@@ -105,7 +105,7 @@ author:
   name             : "Eliecer Hernández"
   avatar           : "/assets/images/eliux.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Out of the box thinker with software development skills"
-  location         : "Quito, Ecuador"
+  location         : "Québec, Canada"
   email            : eliecer@gmail.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -168,7 +168,7 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
+encoding: UTF-8
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
@@ -212,6 +212,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -220,7 +221,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-include-cache
 
 # Archives
 #  Type
