@@ -9,23 +9,48 @@ title: My Sample Projects
 <section class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/SoftwareApplication">
      <meta itemprop="author" content="{{ site.author.name }}" />
-     <meta itemprop="applicationCategory" content="Mobile App" />
-     
+     <meta itemprop="applicationCategory" content="Web App" />
+
      <h2 class="archive__item-title" itemprop="headline">
-      <a href="http://uni-to.appspot.com">Unito</a>
-     </h2> 
+      <a href="http://somnialysis.com">Somnialysis</a>
+     </h2>
      <div class="archive__item-excerpt" itemprop="description">
        <p>
-          Unito is an application meant to allow the majority of cubans to keep popular trading lists, offline, in an Android app. 
+           Created at the end of the summer of 2022, Somnialysis is an innovative AI-driven tool that interprets and
+           analyzes dreams. Leveraging cutting-edge natural language models, this project showcases my expertise
+           in full-stack development and AI integration. By combining psychological insights with machine learning,
+           Somnialysis offers users a unique window into their subconscious mind.
+           This project serves as a testament to the power of AI in cognitive exploration and personal growth.
+       </p>
+       <p>
+         Key features
+         <ul>
+            <li>AI-powered dream interpretation </li>
+            <li>Full-stack development demonstration</li>
+            <li>Intersection of psychology and AI</li>
+         </ul>
+       </p>
+     </div>
+  </article>
+  <article class="archive__item" itemscope itemtype="http://schema.org/SoftwareApplication">
+     <meta itemprop="author" content="{{ site.author.name }}" />
+     <meta itemprop="applicationCategory" content="Mobile App" />
+
+     <h2 class="archive__item-title" itemprop="headline">
+      <a href="http://uni-to.appspot.com">Unito (Deprecated)</a>
+     </h2>
+     <div class="archive__item-excerpt" itemprop="description">
+       <p>
+          Unito is an application meant to allow the majority of cubans to keep popular trading lists, offline, in an Android app.
           Such lists are the cuban equivalent of Craiglist.
-          It was created by me back in 2016, when cubans only had Internet access through public WIFI areas. 
+          It was created by me back in 2016, when cubans only had Internet access through public WIFI areas.
           Years later, most of cubans only have Internet access using mobile data plans which are still very expensive,
           so this service can give a real piece of mind.
           This also works as a playground for me to try out how to make the most of the free layer of Cloud services
           and test interesting technologies, like <a href="https://www.codenameone.com ">CodeName One</a>.
        </p>
 
-      Note: I discountinued this project 3 months later I started it, because I found out that because of the embargo connections 
+      Note: I discountinued this project 3 months later I started it, because I found out that because of the embargo connections
       from Cuba to the <i>appspot.com</i> domain are forbidden. Therefore, its update packages can only be updated from Cuba through a VPN.
      </div>
   </article>
@@ -43,12 +68,12 @@ title: My Sample Projects
       <meta itemprop="author" content="{{ site.author.name }}" />
       {% if project.targetProduct %}
       <meta itemprop="targetProduct" content="{{ project.targetProduct }}" />
-      {% endif %} 
+      {% endif %}
         <h2 class="archive__item-title" itemprop="headline">
           {% if project.url %}
           <a href="{{project.url}}">{{ project.name }}</a>
           {% else %}
-          <a href="https://github.com/{{site.author.github}}/{{project.github-id }}">{{ project.name }}</a> 
+          <a href="https://github.com/{{site.author.github}}/{{project.github-id }}">{{ project.name }}</a>
           {% endif %}
         </h2>
       <div class="archive__item-excerpt" itemprop="description">{{ project.description }}</div>
@@ -71,7 +96,7 @@ title: My Sample Projects
       </id>
   </article>
 {% endfor %}
-<p class="notice--info"><a href="https://github.com/EliuX?tab=repositories">And more...</a> 
+<p class="notice--info"><a href="https://github.com/EliuX?tab=repositories">And more...</a>
   There are some projects which I cannot share because of their privacy rights.
-</p> 
+</p>
 </section>

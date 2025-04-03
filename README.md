@@ -8,13 +8,13 @@ Please follow the following steps
 Be sure you have installed Ruby in your system.
 If this is the first time you execute the project run:
 
-```
+```bash
 gem install
 ```
 But if you have added new gems or changed somehow the Gemfile,
 execute:
 
-```
+```bash
 gem update
 ```
 
@@ -23,13 +23,13 @@ Anytime you change the _config.yml or any other configuration its recomended to:
 
 * For starters to execute:
 
-```
+```bash
 bundle install
 ```
 
 * For the rest of the time, please execute:
 
-```
+```bash
 bundle update
 ```
 
@@ -37,7 +37,7 @@ bundle update
 
 You can run it straight forward with the command:
 
-```
+```bash
 jekyll serve
 ```
 
