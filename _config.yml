@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Eliecer Hernández"
-  avatar           : "/assets/images/eliux.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/eliecer.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Out of the box thinker with software development skills"
   location         : "Québec, Canada"
   email            : eliecer@gmail.com
