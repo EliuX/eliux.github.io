@@ -1,3 +1,4 @@
+---
 layout: single
 classes: wide
 title:  "New Exciting Times"
