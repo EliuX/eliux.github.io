@@ -23,7 +23,7 @@ Anytime you change the _config.yml or any other configuration its recomended to:
 
 * For starters to execute:
 
-```bash
+```bash 
 bundle install
 ```
 
