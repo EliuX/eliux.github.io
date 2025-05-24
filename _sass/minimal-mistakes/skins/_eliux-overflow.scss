@@ -6,6 +6,7 @@
 /* StackOverflow colors */
 $so-orange: #F48024;
 $eliux-primary-color: rgb(166, 233, 213);
+$eliux-secondary-color: rgb(144, 124, 60);
 $so-red: $eliux-primary-color;
 $so-light-black: #393e46;
 $so-black: #242729;
@@ -143,7 +144,7 @@ $navicon-link-color-hover: mix(#fff, $text-color , 80%) !default;
           }          
           .icon-lang-haskell:before,
           .icon-lang-javascript:before {
-            color: $eliux-primary-color
+            color: $eliux-secondary-color;
           }
           .icon-lang-laravel:before,  
           .icon-lang-mega:before{
